@@ -67,6 +67,58 @@
         </aside>
     </header>
     <main>
+        <section class="container-carrinho">
+            <section class="header-carrinho">
+                <h1>DELIVERY ADDRESS</h1>
+             <article class="infos">
+                <P class="infoLocal">
+                <i class="fa-solid fa-location-dot iconLocal" ></i>
+                   Rua das Palmeiras, 789, Jardim das Flores</P>
+              <P class="infoTempo">  
+                <i class="fa-regular fa-clock infoTempo"></i>
+                tempo estimado 30 min</P>
+             </article>
+            </section>
+            <section class="main-carrinho">
+                 <article class="article-carrinho">
+                    <span>                        
+                     <p class="icon-article">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Cart</p>   
+                    </span>
+                    
+                    <p class="orderId">Order ID: #0385</p>
+                 </article>
+                 <section class="main-pedido1">
+                        <img src="/img/burguer1.png" class="imgBurguer1" alt="">
+                    <section class="infoPedido">
+                        <p class="titlePedido">Burguer Pizle</p>
+                        <aside class="btnsPedido">
+                        <button>+</button>
+                        <p id="QtdPedido">0</p>
+                        <button>-</button>
+                        <i class="fa-solid fa-pen"></i>
+                        </aside>
+                    </section>
+                    <aside>
+                    </aside>
+                </section>
+            </section>
+            <section class="footer-carrinho">
+                <article class="promotion">
+                    <p class="promotionCode">Promotion Code</p>
+                    <p class="payMe">PayMe</p>
+                </article>
+                <article class="infoComprar">
+                    <p id="SubTotal">SubTotal: $115</p>
+                    <p id="CustoEntrega">Delivery change: $15</p>
+                    <span class="secaoValores">
+                        <h2 id="IdTotal">Total</h2>
+                    <h2 id="valorTotal">$130.00</h2>
+                    </span>
+                </article>
+            </section>
+        </section>
         <section class="container-search">
             <input type="search" name="search" id="search">
             <span class="containerIconSearch">
@@ -76,34 +128,40 @@
             </span>
         </section>
         <section class="container-categorias">
-            <section class="section1">
-                <h1>Categorias</h1>
-                10+ Categories added this week
+            <section class="header-categorias">
+                <section class="section-categorias">
+                    <h1>Categorias</h1>
+                    <i>10+ Categories added this week</i>
+                </section>
+                <section>
+                    <h3>Ver mais</h3>
+                </section>
             </section>
-            <section class="section2">
-                <h3>Ver mais</h3>
-            </section>
-            <section class="section3">
+            <section class="main-categorias">
                 <section class="categoria1">
-                    <img src="/img/burguer1.png" class="imgBurguer" alt="">
+                    <a href="#">
+                        <img src="/img/burguer1.png" class="imgBurguer" alt="">
+                    </a>
                 </section>
-                <section class="categoria1">
-                    <img src="/img/" class="imgBurguer" alt="">
-                </section>
-                <section class="categoria1">
-                    <img src="/img/" class="imgBurguer" alt="">
-                </section>
-                <section class="categoria1">
-                    <img src="/img/" class="imgBurguer" alt="">
-                </section>
-                <section class="categoria1">
-                    <img src="/img/" class="imgBurguer" alt="">
-                </section>
-                <section class="categoria1">
-                    <img src="/img/" class="imgBurguer" alt="">
+                <section class="categoria2">
+                    <a href="#">
+                        <img src="/img/burguer1.png" class="imgBurguer" alt="">
+                    </a>
                 </section>
             </section>
         </section>
+        <section class="container-produtos">
+            <section class="header-produtos">
+                <section class="title-produtos">
+                    <h1>Produtos</h1>
+                </section>
+            </section>
+            <section class="produto1">
+                    <img src="/img/burguer1.png" class="imgBurguer1" alt="">
+                    <button id="adcionarCarrinho">Comprar</button>
+            </section>
+        </section>
+       
     </main>
     <script src="script/script.js"></script>
 </body>
