@@ -156,6 +156,7 @@ main{
 }
 .article-carrinho{
     width: 100%;
+    margin-bottom: 30px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -167,12 +168,12 @@ main{
 .main-pedido1{
     width: 100%;
     height: 35%;
-    padding: 10px;
+    padding: 5px;
     border-bottom: solid 1px #1c1c1c;
     display: flex;
     justify-content: space-between;
 }
-.main-pedido1>img{
+.main-pedido1>.imgBurguer{
     width: 80px;
     height: 80px;
 }
@@ -376,26 +377,34 @@ main{
     width: 80px;
 }
 .imgBurguer1{
-    width: 160px;
+    width: 180px;
+    height: 140px;
     position: relative;
     top: -65px;
-    left:8px;
+    left: 0px;
 }
 .produto1{
     margin-top: 60px;
     padding: 5px;
-    width: 200px;
-    height: 90px;
+    width: 30%;
+    height: 140px;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
     background-color: #4e4e4e;
 }
-.produto1>button{
+.produto1>aside{
     width: 100%;
-    height: 30px;
-    position: relative;
-    top: -40px;
+    height: 100%;
+    display: flex;
+    align-self: auto;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 3px;
+}
+.produto1>aside>h1{
+    color: #fff;
+}
+.produto1>aside>button{
     font-size: 1.3rem;
     font-weight: 700;
     cursor: pointer;
