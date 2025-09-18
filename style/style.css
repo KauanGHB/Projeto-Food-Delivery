@@ -118,6 +118,9 @@ main{
     flex-direction: column;
 
 }
+.container-carrinho.ativo{
+    visibility: visible;
+}
 .header-carrinho{
     width: 100%;
     height: 17%;
@@ -189,6 +192,7 @@ main{
     width: 100%;
     height: 20px;
     margin: 5px;
+    color: #fff;
 }
 .btnsPedido{
     color: #fff;
@@ -345,12 +349,16 @@ main{
     border-radius: 100%;
     background-color: #4e4e4e;
 }
-.container-produtos{
+.container-produtosPai{
     padding: 10px;
     width: 100%;
     height: 50%;
+}
+.container-produtosFilho{
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
 .header-produtos{
     padding: 5px;
@@ -377,35 +385,41 @@ main{
     width: 80px;
 }
 .imgBurguer1{
-    width: 180px;
-    height: 140px;
-    position: relative;
-    top: -65px;
-    left: 0px;
+    width: 220px;
+    height: 190px;
 }
 .produto1{
     margin-top: 60px;
     padding: 5px;
-    width: 30%;
-    height: 140px;
+    width: 45%;
+    height: 60%;
     border-radius: 10px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #4e4e4e;
 }
-.produto1>aside{
-    width: 100%;
+.produto1>.infoProduto1{
+    width: 68%;
     height: 100%;
     display: flex;
-    align-self: auto;
     justify-content: space-around;
     flex-direction: column;
     padding: 3px;
 }
-.produto1>aside>h1{
+.infoProduto1>h1{
+    font-size: 2rem;
     color: #fff;
 }
-.produto1>aside>button{
-    font-size: 1.3rem;
+.infoProduto1>p{
+    color: #fff;
+    font-size: 1.8rem;
+}
+.infoProduto1>aside>button{
+    width: 60%;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 1.1rem;
     font-weight: 700;
     cursor: pointer;
     border: none;
